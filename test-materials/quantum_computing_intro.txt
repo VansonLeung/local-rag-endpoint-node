@@ -1,0 +1,40 @@
+Introduction to Quantum Computing
+
+Quantum computing represents a revolutionary approach to information processing that leverages the principles of quantum mechanics to solve complex problems beyond the reach of classical computers.
+
+Key Concepts:
+
+1. Qubits vs. Bits
+   - Classical bits: 0 or 1
+   - Qubits: Can exist in superposition (both 0 and 1 simultaneously)
+   - Quantum entanglement: Qubits can be correlated regardless of distance
+   - Quantum interference: Constructive and destructive interference of quantum states
+
+2. Quantum Gates and Circuits
+   - Pauli gates (X, Y, Z): Fundamental single-qubit operations
+   - Hadamard gate: Creates superposition
+   - CNOT gate: Two-qubit entangling operation
+   - Quantum circuits combine gates to perform computations
+
+3. Quantum Algorithms
+   - Shor's algorithm: Factors large numbers exponentially faster than classical methods
+   - Grover's algorithm: Searches unsorted databases quadratically faster
+   - Quantum Fourier Transform: Foundation for many quantum algorithms
+   - Variational Quantum Eigensolver (VQE): Used in quantum chemistry
+
+4. Current Challenges
+   - Decoherence: Quantum states are fragile and easily disturbed
+   - Error correction: Requires many physical qubits per logical qubit
+   - Scalability: Building large-scale quantum computers is extremely difficult
+   - Quantum supremacy demonstrations are still limited
+
+5. Applications
+   - Cryptography: Breaking current encryption, enabling quantum-safe cryptography
+   - Drug discovery: Simulating molecular interactions for new medicines
+   - Materials science: Designing new materials with desired properties
+   - Optimization: Solving complex optimization problems in logistics and finance
+   - Machine learning: Quantum machine learning algorithms
+
+Major players in quantum computing include IBM, Google, Rigetti, IonQ, and academic institutions worldwide. While practical quantum computers are still in development, the field is advancing rapidly with significant investments from governments and industry.
+
+The timeline for practical quantum advantage (quantum supremacy for useful problems) is estimated to be 5-10 years, though some applications may become viable sooner.
