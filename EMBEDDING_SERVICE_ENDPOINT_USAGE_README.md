@@ -1,10 +1,10 @@
 # Embedding Service Endpoint Usage for Third-Party Services
 
-This document provides guidance for third-party services and applications on how to integrate with the Embedding Service API hosted at `http://localhost:3001`. This API generates text embeddings using a pre-trained transformer model, suitable for tasks like semantic search, similarity matching, and RAG (Retrieval-Augmented Generation) systems.
+This document provides guidance for third-party services and applications on how to integrate with the Embedding Service API hosted at `http://localhost:13303`. This API generates text embeddings using a pre-trained transformer model, suitable for tasks like semantic search, similarity matching, and RAG (Retrieval-Augmented Generation) systems.
 
 ## Endpoint Overview
 
-- **Base URL**: `http://localhost:3001`
+- **Base URL**: `http://localhost:13303`
 - **Protocol**: HTTP
 - **Authentication**: None required (for local development)
 - **Rate Limiting**: None implemented
@@ -50,7 +50,7 @@ This document provides guidance for third-party services and applications on how
 import requests
 
 class EmbeddingClient:
-    def __init__(self, base_url="http://localhost:3001"):
+    def __init__(self, base_url="http://localhost:13303"):
         self.base_url = base_url
 
     def get_embedding(self, text: str) -> list:
@@ -79,7 +79,7 @@ print(f"Embedding dimension: {len(embedding)}")
 const axios = require('axios');
 
 class EmbeddingClient {
-    constructor(baseUrl = 'http://localhost:3001') {
+    constructor(baseUrl = 'http://localhost:13303') {
         this.baseUrl = baseUrl;
         this.client = axios.create({
             baseURL: this.baseUrl,
@@ -122,10 +122,10 @@ client.getEmbedding('Hello, world!').then(embedding => {
 
 ```bash
 # Health check
-curl -X GET "http://localhost:3001/health"
+curl -X GET "http://localhost:13303/health"
 
 # Generate embedding
-curl -X POST "http://localhost:3001/embed" \
+curl -X POST "http://localhost:13303/embed" \
      -H "Content-Type: application/json" \
      -d '{"text": "Your text here"}'
 ```

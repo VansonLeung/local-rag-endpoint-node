@@ -2,7 +2,7 @@ const axios = require('axios');
 
 class EmbeddingService {
   constructor() {
-    this.embeddingUrl = process.env.EMBEDDING_SERVICE_URL || 'http://localhost:3001/embed';
+    this.embeddingUrl = process.env.EMBEDDING_SERVICE_URL || 'http://localhost:13303/embed';
   }
 
   async generateEmbedding(text) {
